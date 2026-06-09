@@ -1,0 +1,109 @@
+/* Login.css */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1E293B; /* Fondo secundario de la paleta */
+  font-family: sans-serif;
+}
+
+.login-container {
+  display: flex;
+  width: 800px;
+  height: 450px;
+  background-color: #1E293B;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Sección Izquierda: Logo */
+.logo-section {
+  flex: 1;
+  background-color: #0F172A; /* Fondo principal (Azul muy oscuro) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 10px; /* Genera el margen interno visto en la imagen */
+}
+
+.logo-image {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Sección Derecha: Formulario */
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.login-title {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Inputs */
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #475569; /* Color de bordes/gris adaptado para fondo de input */
+  border-radius: 30px;
+  margin-bottom: 20px;
+  height: 50px;
+  padding: 0 5px; /* Espacio para que el círculo del ícono no toque el borde */
+}
+
+.login-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #F8FAFC;
+  font-size: 14px;
+  padding: 0 15px;
+  outline: none;
+}
+
+.login-input::placeholder {
+  color: #1E293B;
+  font-weight: 600;
+}
+
+/* Iconos */
+.icon-wrapper {
+  background-color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1E293B;
+}
+
+/* Botón */
+.login-button {
+  margin-top: 20px;
+  background-color: #FFFFFF;
+  color: #0F172A;
+  border: none;
+  border-radius: 30px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #CBD5E1; /* Texto secundario como hover */
+}
