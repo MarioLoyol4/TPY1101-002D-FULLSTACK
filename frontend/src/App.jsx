@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Login from './pages/Login.jsx';
+import Users from './pages/Users.jsx';
 import './App.css';
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+
   return (
     <>
-      <Login />
+      {loggedIn ? (
+        <Users onLogout={() => setLoggedIn(false)} />
+      ) : (
+        <Login onLoginSuccess={() => setLoggedIn(true)} />
+      )}
     </>
   );
 }
